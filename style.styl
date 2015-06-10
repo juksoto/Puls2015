@@ -6,7 +6,8 @@ fontSans()
 	font-family: 'Open Sans', sans-serif;
 a
 	color #22BCE0
-
+aside
+	display none
 body
 	background grisBG
 	fontSans()
@@ -46,14 +47,18 @@ header
 		img
 			width 55px
 			border-radius 50%
-	#logo img
-		width 52px
+	#logo
 		border-right 1px solid white 
-		padding-right 0.5em
 		margin-right 0.5em
-	
+		img
+			width 52px
+			padding-right 0.5em
+			margin-right 0.5em
+			transition 0.5s
+			&:hover
+				transform rotate(360deg)
 nav
-	background #80BCA3
+	background #E47C7C
 	box-shadow rgba(0,0,0,0.3) 0px 3px 20px
 	margin 0
 	padding 0 0.5em
@@ -69,20 +74,25 @@ nav
 				text-decoration none
 				display block
 				padding 0.6em
+				transition 0.3s
+				&:hover
+					background #344B54
 		#publicar_nav
 			position absolute
 			right 0
-			top 0em
+			top 0.1em
 			a
 				background #22BCE0
-				padding 0.5em 0.8em
-				color white
-				text-decoration none
 				border-radius 5px
-				font-style italic
-				text-shadow rgba(0,0,0,0.5) 2px 2px 5px
 				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
-
+				color white
+				font-style italic
+				padding 0.5em 0.8em
+				text-decoration none
+				text-shadow rgba(0,0,0,0.5) 2px 2px 5px
+				transition 0.3s
+				&:hover
+					background #344B54
 #contenido
 	margin 1em 
 	.imagen_item
@@ -102,17 +112,17 @@ nav
 			font-style italic
 		.datos_item
 			text-align right
-			margin 0.3em 1em 0 0
+			  margin 1em 1em 0 0
 			.fecha_item
 				color #AAA
 			.tag_item
 				background #F4502A
-				color white
-				text-decoration none
-				display inline-block
-				padding 0.2em 0.5em
 				border-radius 0.5em
+				color white
+				display inline-block
 				float left
+				padding 0.2em 0.5em
+				text-decoration none
 		.titulo_item
 			font-size 1.2em
 			font-style italic
@@ -130,5 +140,46 @@ nav
 			position absolute
 			top 100%
 			width 90%
+			a
+				text-decoration none
 			.comentarios_item, .guardar_item
 				float right
+.form-wrapp
+	display none
+	form
+		padding 1em
+		text-align right
+		input
+			border-radius 3px
+			border 1px solid #ccc
+			padding 0.2em 0.6em
+		.button
+			background #e47c7c
+			color white
+			transition 0.3s
+			&:hover
+				background #344B54
+			
+//Cada que vez q imprima va tomar estos estilos
+/*@media print 
+	body 
+		font-size 14px			*/
+@media screen and (min-width:800px)
+	#contenido
+		overflow hidden
+		 .item
+			width 49%
+			float left
+			/*Elementos impares*/
+			&:nth-child(odd)
+				margin-right 2%
+				
+@media screen and (min-width:1000px)
+	aside
+		display block
+		float right
+		width 20%
+		video
+			width 100%
+		
+	

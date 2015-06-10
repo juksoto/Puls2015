@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>PULS 2015</title>
-	<meta name="description" content="Proyecto de la primera generacion">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400' rel='stylesheet' type='text/css'>	
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
-
+	<meta charset="utf-8" />
+	<meta name="description" content="Proyecto de la primera generación del 2014 del curso de diseño web online" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<title>Puls2014: Comunidad online de gente atractiva</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="codigo.js"></script>
 </head>
 <body>
 	<header>
 		<figure id="logo">
 			<img src="logo.png" />
 		</figure>
-		<h1>
-			Puls2014: Comunidad de personas atractivas y sexy
-		</h1>
+		<h1>Puls2014: Comunidad de personas atractivas y millonarias</h1>
 		<figure id="avatar">
 			<img src="avatar.jpg" />
 		</figure>
@@ -29,35 +28,48 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#">Publicar</a>
+				<a href="#" class="icon-lapiz">Publicar</a>
 			</li>
 		</ul>
 	</nav>
+	<section class="form-wrapp" id="form-wrapp">
+		<form action="" method="POST" id="formulario">
+			<input type="text" name="titulo" id="titulo" placeholder="Titulo"required>
+			<input type="url" name="url" id="url" placeholder="Link" required>
+			<input type="submit" name="enviar" Value="Agregar" id="enviar" class="button">
+
+		</form>
+	</section>
+	<aside>
+		<video width="320" height="240" autoplay>
+			<source src="lecturas.mp4" type="video/mp4">
+			<source src="lecturas.ogg" type="video/ogg">
+			<!-- actualiza tu navegador -->
+		</video>
+	</aside>
 	<section id="contenido">
 		<article class="item">
 			<figure class="imagen_item">
 				<img src="imagen.jpg" />
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">
-					Crear un login con Laravel
-				</a>
+				<a href="#">Aspen, un framework para Python</a>
 			</h2>
 			<div class="autor_item">
-				por <a href="#">Joana Muñoz</a>
+				Por <a href="#">Maika Gonzalez</a>
 			</div>
 			<div class="datos_item">
-				<a href="#" class="tag_item">pony</a>
+				<a href="#" class="tag_item">Pony</a>
 				<span class="fecha_item">
-					hace <strong>5</strong> min
+					Hace <strong>5</strong> min
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up">U</a>
-				720
-				<a href="#" class="down">D</a>
-				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item">X</a>
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -65,25 +77,23 @@
 				<img src="imagen.jpg" />
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">
-					Facebook prueba una forma de monetizar aplicaciones para móviles
-				</a>
+				<a href="#">Top 5 de herramientas para realizar SEO</a>
 			</h2>
 			<div class="autor_item">
-				por <a href="#">Joana Muñoz</a>
+				Por <a href="#">Maika Gonzalez</a>
 			</div>
 			<div class="datos_item">
-				<a href="#" class="tag_item">pony</a>
+				<a href="#" class="tag_item">Pony</a>
 				<span class="fecha_item">
-					hace <strong>5</strong> min
+					Hace <strong>5</strong> min
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up">U</a>
-				720
-				<a href="#" class="down">D</a>
-				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item">X</a>
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -91,25 +101,23 @@
 				<img src="imagen.jpg" />
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">
-					Cómo medir tu sueño, ejercicio y geolocalizar tu vida
-				</a>
+				<a href="#">Máscara de recorte en humo con After Effects</a>
 			</h2>
 			<div class="autor_item">
-				por <a href="#">Joana Muñoz</a>
+				Por <a href="#">Maika Gonzalez</a>
 			</div>
 			<div class="datos_item">
-				<a href="#" class="tag_item">pony</a>
+				<a href="#" class="tag_item">Pony</a>
 				<span class="fecha_item">
-					hace <strong>5</strong> min
+					Hace <strong>5</strong> min
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up">U</a>
-				720
-				<a href="#" class="down">D</a>
-				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item">X</a>
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -117,25 +125,23 @@
 				<img src="imagen.jpg" />
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">
-					Top 5 de herramientas para realizar SEO
-				</a>
+				<a href="#">Vagrant, crea entornos de desarrollo virtualizados</a>
 			</h2>
 			<div class="autor_item">
-				por <a href="#">Joana Muñoz</a>
+				Por <a href="#">Maika Gonzalez</a>
 			</div>
 			<div class="datos_item">
-				<a href="#" class="tag_item">pony</a>
+				<a href="#" class="tag_item">Pony</a>
 				<span class="fecha_item">
-					hace <strong>5</strong> min
+					Hace <strong>5</strong> min
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up">U</a>
-				720
-				<a href="#" class="down">D</a>
-				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item">X</a>
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -143,25 +149,23 @@
 				<img src="imagen.jpg" />
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">
-					Máscara de recorte en humo con After Effects
-				</a>
+				<a href="#">Automatizar tareas con Nginx y Fabric</a>
 			</h2>
 			<div class="autor_item">
-				por <a href="#">Joana Muñoz</a>
+				Por <a href="#">Maika Gonzalez</a>
 			</div>
 			<div class="datos_item">
-				<a href="#" class="tag_item">pony</a>
+				<a href="#" class="tag_item">Pony</a>
 				<span class="fecha_item">
-					hace <strong>5</strong> min
+					Hace <strong>5</strong> min
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up">U</a>
-				720
-				<a href="#" class="down">D</a>
-				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item">X</a>
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 		<article class="item">
@@ -169,32 +173,31 @@
 				<img src="imagen.jpg" />
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">
-					Vagrant, crea entornos de desarrollo virtualizados
-				</a>
+				<a href="#">Dominio virtual para Laravel en Ubuntu</a>
 			</h2>
 			<div class="autor_item">
-				por <a href="#">Joana Muñoz</a>
+				Por <a href="#">Maika Gonzalez</a>
 			</div>
 			<div class="datos_item">
-				<a href="#" class="tag_item">pony</a>
+				<a href="#" class="tag_item">Pony</a>
 				<span class="fecha_item">
-					hace <strong>5</strong> min
+					Hace <strong>5</strong> min
 				</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up">U</a>
-				720
-				<a href="#" class="down">D</a>
-				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item">X</a>
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
 	</section>
 	<footer>
-		<p><strong>Desarrollado por Juan</strong></p>
-		<p>mejorando.la 2015</p>
+		<p>
+			<strong>Powered by Pony</strong>
+		</p>
+		<p>mejorando.la 2013</p>
 	</footer>
-
 </body>
 </html>
