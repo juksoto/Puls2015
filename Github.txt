@@ -29,7 +29,7 @@ Github -> Aplicación web ->
 2.	Web / APPS / 
 3.	Mucho más fácil usar git
 --
-Hi  sd
+
 Repositorio de códigos  Github (Master)
 Clon local
 	Commit  –  sync
