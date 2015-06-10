@@ -1,11 +1,15 @@
 @import "nib"
+@import "font.styl"
+
 grisBG=#eeeeee
+fontSans()
+	font-family: 'Open Sans', sans-serif;
 a
 	color #22BCE0
 
 body
 	background grisBG
-	font-family "Arial"
+	fontSans()
 	font-size 16px
 
 footer
@@ -34,11 +38,6 @@ header
 	position relative
 	figure
 		float left
-	#logo img
-		width 52px
-		border-right 1px solid white 
-		padding-right 0.5em
-		margin-right 0.5em
 	#avatar
 		position absolute
 		top 0
@@ -47,8 +46,15 @@ header
 		img
 			width 55px
 			border-radius 50%
+	#logo img
+		width 52px
+		border-right 1px solid white 
+		padding-right 0.5em
+		margin-right 0.5em
+	
 nav
 	background #80BCA3
+	box-shadow rgba(0,0,0,0.3) 0px 3px 20px
 	margin 0
 	padding 0 0.5em
 	position relative
@@ -79,25 +85,26 @@ nav
 
 #contenido
 	margin 1em 
+	.imagen_item
+		float left
+		margin 0 1em 0 0
+		img
+			width 96px
 	.item
 		background white
 		border-bottom 3px solid #22BCE0
 		position relative
 		min-height 128px
 		margin-bottom 3em
-		.titulo_item
-			font-size 1.2em
-			font-style italic
-			padding 1em 1em 0 0
-			a
-				color #444
-				text-decoration none
+		
 		.autor_item
 			color #AAA
 			font-style italic
 		.datos_item
 			text-align right
 			margin 0.3em 1em 0 0
+			.fecha_item
+				color #AAA
 			.tag_item
 				background #F4502A
 				color white
@@ -106,8 +113,13 @@ nav
 				padding 0.2em 0.5em
 				border-radius 0.5em
 				float left
-			.fecha_item
-				color #AAA
+		.titulo_item
+			font-size 1.2em
+			font-style italic
+			padding 1em 1em 0 0
+			a
+				color #444
+				text-decoration none
 		.votacion
 			background white
 			border-radius 0 0 0.5em 0.5em
@@ -120,13 +132,3 @@ nav
 			width 90%
 			.comentarios_item, .guardar_item
 				float right
-			
-			
-	.imagen_item
-		float left
-		margin 0 1em 0 0
-		img
-			width 96px
-	
-				
-	
